@@ -7,7 +7,6 @@ function loginPopup(){
     login_us.classList.add('open-popup');
     loginButton.style.display = 'none'; 
     logout.style.display = 'block'
-
 }
 function login(){
     logout.style.display = 'none';
@@ -33,6 +32,11 @@ function closePopup(){
     popup.classList.remove('open-popup');
 }
 
+
+function openPopup(){
+    popup.classList.add('open-popup');
+}
+
 // Selecting form and input elements
 const form = document.querySelector("form");
 
@@ -44,10 +48,6 @@ const showError = (field, errorText) => {
     errorElement.classList.add("error-text");
     errorElement.innerText = errorText;
     field.closest(".form-group").appendChild(errorElement);
-}
-
-function openPopup(){
-    popup.classList.add('open-popup');
 }
 
 
