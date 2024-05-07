@@ -179,6 +179,10 @@ nav img{
     text-align:  right;
 }
 
+#Logout{
+    display: none;
+}
+
 .nav-links ul li{
     list-style: none;
     display: inline-block;
@@ -548,6 +552,7 @@ background: #179b81;
         background: forestgreen;
         height: 100vh;
         width: 200px;
+        display: none;
         top:0;
         right:-201px;
         text-align: left;
